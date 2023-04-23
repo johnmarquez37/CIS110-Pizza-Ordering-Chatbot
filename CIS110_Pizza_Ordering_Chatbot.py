@@ -36,7 +36,7 @@ elif size.lower() == "medium":
     pizzaCost = 14.99
 elif size.lower() == "large":
     pizzaCost = 17.99
-total = (pizzaCost * quantity) * salesTax + deliveryFee
+total = round ((pizzaCost * quantity) * salesTax + deliveryFee, 2)
 print(total)
 print("_" * 10)
 print(f"Thank you, {username}, for your order. ")
@@ -46,6 +46,13 @@ if total >= 50:
 else:
     print("\nOrder over $50 you will receive a free $10 off coupon! ")
 print("_" * 10)
+
+
+
+
+
+
+
 
 
 
